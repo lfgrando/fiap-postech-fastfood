@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SelfService.Domain.Services.DTOs;
 using SelfService.Domain.Services.Interfaces;
-using System.Threading.Tasks;
 
 namespace Api.Controllers;
 

@@ -17,11 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{7B8FA796-80EE-411A-8807-0C338B44B3EE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "init", "init", "{6DF8F7DD-4811-41A5-9C21-B028DBE48D18}"
-	ProjectSection(SolutionItems) = preProject
-		db\init\init.js = db\init\init.js
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{4D2B2519-27DF-432B-AA47-E33670008FF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "definitions", "definitions", "{1DF86B6A-0CC8-40C4-B28A-821636F529A2}"
@@ -102,6 +97,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfService.Domain", "src\Core\SelfService\SelfService.Domain\SelfService.Domain.csproj", "{341F2F7B-86B5-FD18-30F5-CCB2EEBBF4EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossCutting.Exceptions", "src\CrossCutting\CrossCutting.Exceptions\CrossCutting.Exceptions.csproj", "{AAFB78D8-0C95-10ED-7356-B23F0DC1914C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "init", "init", "{C323EF2F-735B-4B1F-97AC-0FCD0F4D614F}"
+	ProjectSection(SolutionItems) = preProject
+		db\init\init.js = db\init\init.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -198,7 +198,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{6DF8F7DD-4811-41A5-9C21-B028DBE48D18} = {7B8FA796-80EE-411A-8807-0C338B44B3EE}
 		{1DF86B6A-0CC8-40C4-B28A-821636F529A2} = {4D2B2519-27DF-432B-AA47-E33670008FF5}
 		{DAF9B07E-2997-48D0-8EBE-58E953D8EABE} = {4D2B2519-27DF-432B-AA47-E33670008FF5}
 		{684B02DA-09A3-4F8E-93D6-2BFFA8210E0A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
@@ -234,6 +233,7 @@ Global
 		{D25E9741-2CE1-E9BB-466B-C241A026C79B} = {8B0F7792-FB7C-4924-9115-87FF33B667A4}
 		{341F2F7B-86B5-FD18-30F5-CCB2EEBBF4EF} = {8B0F7792-FB7C-4924-9115-87FF33B667A4}
 		{AAFB78D8-0C95-10ED-7356-B23F0DC1914C} = {5C25B8A1-FD62-4E68-8E4F-7C2943BE7B54}
+		{C323EF2F-735B-4B1F-97AC-0FCD0F4D614F} = {7B8FA796-80EE-411A-8807-0C338B44B3EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23604ACB-9007-41E6-A286-06BAA8CB43B3}

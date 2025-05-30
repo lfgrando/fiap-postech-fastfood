@@ -1,5 +1,4 @@
 ﻿using Menu.Domain.Services.DTOs;
-using Menu.Domain.Services.Entities;
 using Menu.Infra.Repositories.Entities;
 
 namespace Menu.Infra.Repositories.Interfaces;

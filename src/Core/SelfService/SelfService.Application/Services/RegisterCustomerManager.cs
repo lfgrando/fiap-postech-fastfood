@@ -23,7 +23,7 @@ public class RegisterCustomerManager : IRegisterCustomerService
 
         var customer = await _repository.GetByCpfAsync(cpf, cancellationToken);
 
-        if(customer is null)
+        if (customer is null)
         {
             throw new ArgumentNullException(nameof(customer));
         }
