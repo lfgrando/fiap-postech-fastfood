@@ -22,7 +22,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "definitions", "definitions", "{1DF86B6A-0CC8-40C4-B28A-821636F529A2}"
 	ProjectSection(SolutionItems) = preProject
 		docs\definitions\linguagem-ubiqua.md = docs\definitions\linguagem-ubiqua.md
-		docs\definitions\Routes.md = docs\definitions\Routes.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "diagrams", "diagrams", "{DAF9B07E-2997-48D0-8EBE-58E953D8EABE}"
