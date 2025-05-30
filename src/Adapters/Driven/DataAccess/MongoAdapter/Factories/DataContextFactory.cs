@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using MongoAdapter.Contexts.Interfaces;
 using MongoAdapter.Contexts;
+using MongoAdapter.Contexts.Interfaces;
 using MongoAdapter.Interfaces;
 
 namespace MongoAdapter.Factories;

@@ -6,7 +6,7 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace Menu.Infra.Repositories.Entities;
 
 [BsonIgnoreExtraElements]
-[BsonDiscriminator("menu")]
+[BsonDiscriminator("menuItem")]
 public class MenuItemMongoDb : MongoEntity
 {
     public string? Name { get; set; }
@@ -14,7 +14,7 @@ public class MenuItemMongoDb : MongoEntity
     public decimal Price { get; set; }
     public bool IsActive { get; set; }
     public bool IsDeleted { get; set; }
-    
+
     [BsonRepresentation(BsonType.String)]
     public MenuCategory Category { get; set; }
 

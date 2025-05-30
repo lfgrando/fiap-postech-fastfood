@@ -1,6 +1,5 @@
 ﻿using CrossCutting.Exceptions;
 using Menu.Domain.Services.DTOs;
-using Menu.Domain.Services.Entities;
 using Menu.Infra.Repositories.Entities;
 using Menu.Infra.Repositories.Interfaces;
 using MongoAdapter;
@@ -105,7 +104,7 @@ public class MenuMongoRepository : BaseRepository<MenuItemMongoDb>, IMenuMongoRe
             .Set(e => e.Category, menuItem.Category)
             .Set(e => e.Description, menuItem.Description)
             .Set(e => e.IsActive, menuItem.IsActive);
-        
+
         await _collection.UpdateOneAsync(filter, update, cancellationToken: cancellationToken);
     }
 }

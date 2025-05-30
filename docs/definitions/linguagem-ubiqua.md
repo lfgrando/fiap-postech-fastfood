@@ -1,28 +1,51 @@
-# Fast Food: Linguagem Ubíqua
+# 🔤 Ubiquitous Language — FIAP Postech Fast Food
 
-### Cliente
-Também chamado de **customer**, é o usuário do sistema da lanchonete que se identifica e realiza os pedidos.
+Este documento define os principais termos e conceitos utilizados de forma consistente por todas as partes envolvidas no projeto.
 
-### Totem
-Dispositivo de interação do cliente, possibilitando o registro, montagem de pedido e pagamento.
+---
 
-### Sistema
-Refere-se ao software responsável por processar as operações da lanchonete, realizando o registro de clientes, gerenciamento de pedidos e integrações com sistemas extenos.
+### 👤 Customer (Cliente)
+Pessoa que interage com o sistema para realizar um pedido. Pode se identificar via CPF, realizar um cadastro básico, ou permanecer anônima.
 
-### Self-Service / Auto-Atendimento / Totem
-Modulo de gerenciamento do auto atendimento do cliente.
+---
 
-### Menu / Cardápio
-Modulo de gestão de cardápio e categorias.
+### 🖥️ Self-Service (Totem / Auto-atendimento)
+Terminal físico de autoatendimento onde o cliente interage com o sistema, monta seu pedido, escolhe os itens desejados e realiza o pagamento.
 
-### Kitchen / Cozinha
-Modulo de controle de fluxo de trabalho/preparo da cozinha.
+---
 
-### Inventory / Estoque
-Modulo de gestão de estoque e disponibilidade de produtos.
+### 🧠 System Core (Sistema)
+Conjunto de componentes responsáveis por orquestrar as operações internas da aplicação, incluindo o gerenciamento de pedidos, controle de fluxo entre módulos e persistência de dados.
 
-### Payment / Pagamento
-Modulo de controle de pagamento.
+---
 
-### Order / Pedido
-Modulo de gerenciamento dos pedidos
+### 🧾 Order (Módulo de Pedidos)
+Responsável por capturar, validar e processar os pedidos realizados pelos clientes. Controla o ciclo de vida do pedido:
+- Recebido
+- Em preparo
+- Pronto
+- Finalizado
+
+---
+
+### 🍔 Menu (Gestão de Cardápio)
+Gerencia os itens disponíveis para pedido, agrupando-os em categorias fixas:
+- MainCourse (Lanche)
+- SideDish (Acompanhamento)
+- Beverage (Bebida)
+- Dessert (Sobremesa)
+
+---
+
+### 🔥 Kitchen (Cozinha)
+Gerencia a fila de pedidos da cozinha e o progresso da preparação.
+
+---
+
+### 📦 Stock (Estoque)
+Controle da disponibilidade de produtos, permitindo ao estabelecimento ajustar o menu conforme a quantidade disponível.
+
+---
+
+### 💳 Payment Gateway
+Responsável por integrar e registrar o pagamento dos pedidos. No MVP, utiliza QR Code do Mercado Pago como forma de checkout.
