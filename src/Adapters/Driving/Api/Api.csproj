@@ -15,8 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\Inventory\Inventory.Application\Inventory.Application.csproj" />
-    <ProjectReference Include="..\..\..\Core\Inventory\Inventory.Domain\Inventory.Domain.csproj" />
     <ProjectReference Include="..\..\..\Core\Kitchen\Kitchen.Application\Kitchen.Application.csproj" />
     <ProjectReference Include="..\..\..\Core\Kitchen\Kitchen.Domain\Kitchen.Domain.csproj" />
     <ProjectReference Include="..\..\..\Core\Menu\Menu.Application\Menu.Application.csproj" />
@@ -27,13 +25,15 @@
     <ProjectReference Include="..\..\..\Core\Payment\Payment.Domain\Payment.Domain.csproj" />
     <ProjectReference Include="..\..\..\Core\SelfService\SelfService.Application\SelfService.Application.csproj" />
     <ProjectReference Include="..\..\..\Core\SelfService\SelfService.Domain\SelfService.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Core\Stock\Stock.Application\Stock.Application.csproj" />
+    <ProjectReference Include="..\..\..\Core\Stock\Stock.Domain\Stock.Domain.csproj" />
     <ProjectReference Include="..\..\Driven\DataAccess\MongoAdapter\MongoAdapter.csproj" />
-    <ProjectReference Include="..\..\Driven\Inventory.Infra\Inventory.Infra.csproj" />
     <ProjectReference Include="..\..\Driven\Kitchen.Infra\Kitchen.Infra.csproj" />
     <ProjectReference Include="..\..\Driven\Menu.Infra\Menu.Infra.csproj" />
     <ProjectReference Include="..\..\Driven\Order.Infra\Order.Infra.csproj" />
     <ProjectReference Include="..\..\Driven\Payment.Infra\Payment.Infra.csproj" />
     <ProjectReference Include="..\..\Driven\SelfService.Infra\SelfService.Infra.csproj" />
+    <ProjectReference Include="..\..\Driven\Stock.Infra\Stock.Infra.csproj" />
   </ItemGroup>
 
 </Project>

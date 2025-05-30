@@ -1,4 +1,4 @@
-﻿using Inventory.Infra;
+﻿using Stock.Infra;
 using Kitchen.Infra;
 using Menu.Infra;
 using MongoAdapter;
@@ -14,7 +14,7 @@ public static class AdaptersExtensions
     {
         return services
             .InjectMongoAdapter()
-            .InjectInventoryInfra()
+            .InjectStockInfra()
             .InjectKitchenInfra()
             .InjectMenuInfra()
             .InjectOrderInfra()
