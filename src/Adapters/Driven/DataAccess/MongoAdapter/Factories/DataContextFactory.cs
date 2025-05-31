@@ -13,7 +13,7 @@ public static class DataContextFactory
 
         var mongoConnection = mongoConnections.Where(w => w.ClusterName == "default").FirstOrDefault();
 
-        var mongoDatabase = mongoConnection!.Client.GetDatabase("fastfood");
+        var mongoDatabase = mongoConnection!.Client.GetDatabase("fiap_fastfood");
 
         return new MongoContext("default", mongoDatabase);
     }

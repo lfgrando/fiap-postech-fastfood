@@ -11,8 +11,6 @@ const now = new Date();
 db.menuItem.createIndex({ Name: 1 }, { unique: true });
 
 db.menuItem.insertMany([
-[
-  // MainCourse
   {
     _id: ObjectId(),
     CreatedAt: now,

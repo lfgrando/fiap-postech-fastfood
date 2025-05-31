@@ -12,7 +12,7 @@ services:
       - mongo-network
     volumes:
       - mongodb-data:/data/db
-      - ./init:/docker-entrypoint-initdb.d
+      - ./db/init:/docker-entrypoint-initdb.d
 
   mongo-express:
     image: mongo-express
