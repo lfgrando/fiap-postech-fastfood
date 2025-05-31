@@ -48,6 +48,11 @@ internal class OrderRepository : IOrderRepository
         return orderMongoDB?.ToDomain();
     }
 
+    public Task UpdatePaymentMethodAsync(string id, PaymentMethod paymentMethod, CancellationToken cancellationToken)
+    {
+        return _orderMongoDbRepository.UpdatePaymentMethodAsync(id, paymentMethod, cancellationToken);
+    }
+
     public async Task<OrderEntity> UpdateStatusAsync(string id, OrderStatus status, CancellationToken cancellationToken)
     {
         var orderMongoDb = await _orderMongoDbRepository.UpdateStatusAsync(id, status, cancellationToken);
