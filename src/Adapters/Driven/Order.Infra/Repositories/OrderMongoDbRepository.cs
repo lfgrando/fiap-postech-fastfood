@@ -58,6 +58,19 @@ internal class OrderMongoDbRepository : BaseRepository<OrderMongoDb>, IOrderMong
         return order;
     }
 
+    public Task UpdatePaymentMethodAsync(string id, PaymentMethod paymentMethod, CancellationToken cancellationToken)
+    {
+        var filter = Builders<OrderMongoDb>.Filter.Eq(entity => entity.Id, id);
+        var update = Builders<OrderMongoDb>.Update.Set(entity => entity.PaymentMethod, paymentMethod);
+
+        var options = new FindOneAndUpdateOptions<OrderMongoDb>
+        {
+            ReturnDocument = ReturnDocument.After
+        };
+
+        return _collection.FindOneAndUpdateAsync(filter, update, options, cancellationToken);
+    }
+
     public Task<OrderMongoDb> UpdateStatusAsync(string id, OrderStatus status, CancellationToken cancellationToken)
     {
         var filter = Builders<OrderMongoDb>.Filter.Eq(entity => entity.Id, id);

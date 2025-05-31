@@ -10,6 +10,10 @@ internal interface IOrderRepository
     Task<Pagination<OrderEntity>> GetAllByStatus(OrderStatus status, int page, int size, CancellationToken cancellationToken);
     Task<Pagination<OrderEntity>> GetAllPaginate(int page, int size, CancellationToken cancellationToken);
     Task DeleteAsync(string id, CancellationToken cancellationToken);
+    Task UpdatePaymentMethodAsync(
+        string id,
+        PaymentMethod paymentMethod,
+        CancellationToken cancellationToken);
     Task<OrderEntity> UpdateStatusAsync(
         string id,
         OrderStatus status,
