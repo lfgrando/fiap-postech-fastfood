@@ -65,7 +65,7 @@ Este sistema tem como objetivo gerenciar o processo de pedidos em uma lanchonete
 
 ## 🧪 Acessos úteis
 
-- Swagger UI: [https://localhost:7206/swagger/index.html](https://localhost:7206/swagger/index.html)
+- Swagger UI: [https://localhost:8080/swagger/index.html](https://localhost:8080/swagger/index.html)
 - Mongo Express: [http://localhost:8081](http://localhost:8081)
   - Banco: `fiap_fastfood`
 
