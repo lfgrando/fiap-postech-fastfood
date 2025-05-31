@@ -25,6 +25,17 @@ public class CustomerMongoRepository : BaseRepository<CustomerMongoDb>, ICustome
         return customer;
     }
 
+    public async Task<CustomerMongoDb?> GetByIdAsync(string id, CancellationToken cancellationToken)
+    {
+        var filter = Builders<CustomerMongoDb>.Filter.Eq(e => e.Id, id);
+
+        var options = new FindOptions();
+
+        var customer = await _collection.Find(filter, options).FirstOrDefaultAsync(cancellationToken);
+
+        return customer;
+    }
+
     public async Task<CustomerMongoDb> InsertOneAsync(CustomerMongoDb customerMongoDb, CancellationToken cancellationToken)
     {
         var options = new InsertOneOptions();

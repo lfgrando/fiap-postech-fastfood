@@ -12,11 +12,10 @@ public static class MongoExtensions
     public static IServiceCollection InjectMongoAdapter(this IServiceCollection services)
     {
         return services
-            .AddConnections()
-            ;
+            .AddConnections();
     }
 
-    public static IServiceCollection AddConnections(this IServiceCollection services)
+    private static IServiceCollection AddConnections(this IServiceCollection services)
     {
         var stringConnectionMongo = Environment.GetEnvironmentVariable(STRING_CONNECTION_MONGO);
 
