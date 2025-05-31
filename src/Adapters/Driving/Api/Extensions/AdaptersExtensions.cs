@@ -1,10 +1,10 @@
-﻿using Stock.Infra;
-using Kitchen.Infra;
+﻿using Kitchen.Infra;
 using Menu.Infra;
 using MongoAdapter;
 using Order.Infra;
 using Payment.Infra;
 using SelfService.Infra;
+using Stock.Infra;
 
 namespace Api.Extensions;
 

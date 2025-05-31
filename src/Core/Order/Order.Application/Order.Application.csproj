@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Payment\Payment.Domain\Payment.Domain.csproj" />
+    <ProjectReference Include="..\..\SelfService\SelfService.Domain\SelfService.Domain.csproj" />
+    <ProjectReference Include="..\..\Stock\Stock.Domain\Stock.Domain.csproj" />
     <ProjectReference Include="..\Order.Domain\Order.Domain.csproj" />
   </ItemGroup>
 

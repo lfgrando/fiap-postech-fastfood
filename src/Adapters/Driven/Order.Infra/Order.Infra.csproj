@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Order\Order.Domain\Order.Domain.csproj" />
+    <ProjectReference Include="..\DataAccess\MongoAdapter\MongoAdapter.csproj" />
   </ItemGroup>
 
 </Project>

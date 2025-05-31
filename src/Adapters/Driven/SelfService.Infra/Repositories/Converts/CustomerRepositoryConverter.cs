@@ -21,6 +21,13 @@ public class CustomerRepositoryConverter : ICustomerRepository
         return customerMongoDb?.ToDoCustomer();
     }
 
+    public async Task<Customer?> GetByIdAsync(string id, CancellationToken cancellationToken)
+    {
+        var customerMongoDb = await _repository.GetByIdAsync(id, cancellationToken);
+
+        return customerMongoDb?.ToDoCustomer();
+    }
+
     public async Task<Customer> InsertOneAsync(Customer customer, CancellationToken cancellationToken)
     {
         var customerMongoDb = CustomerMongoDb.Create(customer);

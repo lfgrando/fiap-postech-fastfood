@@ -28,7 +28,26 @@ public class RegisterCustomerManager : IRegisterCustomerService
             throw new ArgumentNullException(nameof(customer));
         }
 
-        var response = new CustomerResponse(customer.Id!);
+        var response = new CustomerResponse(customer.Id!, customer.Email ?? string.Empty);
+
+        return response;
+    }
+
+    public async Task<CustomerResponse> GetByIdAsync(string id, CancellationToken cancellationToken)
+    {
+        if (string.IsNullOrWhiteSpace(id))
+        {
+            throw new ArgumentNullException(nameof(id));
+        }
+
+        var customer = await _repository.GetByIdAsync(id, cancellationToken);
+
+        if (customer is null)
+        {
+            throw new ArgumentNullException(nameof(customer));
+        }
+
+        var response = new CustomerResponse(customer.Id!, customer.Email ?? string.Empty);
 
         return response;
     }
@@ -39,7 +58,7 @@ public class RegisterCustomerManager : IRegisterCustomerService
 
         customer = await _repository.InsertOneAsync(customer, cancellationToken);
 
-        var response = new CustomerResponse(customer.Id!);
+        var response = new CustomerResponse(customer.Id!, customer.Email ?? string.Empty);
 
         return response;
     }

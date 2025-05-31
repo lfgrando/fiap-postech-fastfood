@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CrossCutting\CrossCutting.Exceptions\CrossCutting.Exceptions.csproj" />
+  </ItemGroup>
+
 </Project>

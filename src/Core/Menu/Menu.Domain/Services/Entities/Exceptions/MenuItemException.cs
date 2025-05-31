@@ -8,7 +8,7 @@ public class MenuItemException : BaseEntityException<MenuItem>
     {
     }
 
-    public static void ThrowIfEmptyOrWhiteSpace(string? value, string propertyName)
+    public static new void ThrowIfEmptyOrWhiteSpace(string? value, string propertyName)
     {
         if (string.IsNullOrWhiteSpace(value))
             throw new ArgumentException($"{propertyName} cannot be empty or whitespace.");

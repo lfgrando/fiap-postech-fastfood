@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CrossCutting\CrossCutting.Exceptions\CrossCutting.Exceptions.csproj" />
+    <ProjectReference Include="..\..\Order\Order.Domain\Order.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

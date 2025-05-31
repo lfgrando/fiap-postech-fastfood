@@ -1,15 +1,14 @@
-﻿using Stock.Application;
-using Stock.Domain;
-using Kitchen.Application;
+﻿using Kitchen.Application;
 using Kitchen.Domain;
 using Menu.Application;
 using Menu.Domain;
 using Order.Application;
-using Order.Domain;
 using Payment.Application;
 using Payment.Domain;
 using SelfService.Application;
 using SelfService.Domain;
+using Stock.Application;
+using Stock.Domain;
 
 namespace Api.Extensions;
 
@@ -25,7 +24,6 @@ public static class CoreExtensions
             .InjectMenuApplication()
             .InjectMenuDomain()
             .InjectOrderApplication()
-            .InjectOrderDomain()
             .InjectPaymentApplication()
             .InjectPaymentDomain()
             .InjectSelfServiceApplication()
