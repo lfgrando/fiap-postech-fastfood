@@ -15,6 +15,13 @@ Este sistema tem como objetivo gerenciar o processo de pedidos em uma lanchonete
 
 ---
 
+## 📄 Documentação
+
+- [Diagramas - Event Storming | Story Telling | Bounded Context](https://drive.google.com/drive/folders/1xNRAZfIqpomhRkz2gcdYtUZLtypkbk99)
+- [Evidências de Desenvolvimento ](https://drive.google.com/drive/folders/1ptX92zr9ImXOPE8CUBSneuTZCRWBGyF4)
+- [Documentos](https://drive.google.com/drive/folders/1EetNjhhsiNHsdST1Y8xH1hMnI4fPpDNv)
+
+
 ## ⚙️ Tecnologias utilizadas
 
 - [.NET 8.0](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8)
@@ -111,10 +118,19 @@ db/
 | Método | Rota                          | Descrição                                    |
 |--------|-------------------------------|----------------------------------------------|
 | GET    | /Menu                         | Obtém os itens disponíveis no cardápio       |
+| POST   | /Menu                         | Criação de um novo menu                      |
+| GET    | /Menu/[id]                    | Consultar item de menu pelo ID               |
+| PUT    | /Menu/[id]                    | Atualizar item de menu pelo ID               |
+| DELETE | /Menu/[id]                    | deletar item de menu pelo ID                 |
 | POST   | /SelfService/customer         | Cadastra um novo cliente                     |
 | GET    | /SelfService/customer/[cpf]   | Busca cliente por CPF                        |
-| POST   | /Order/[id]/checkout          | Confirma pedido e obtém dados para pagamento |
-| GET    | /Order/[id]/confirm-payment   | Lista todos os pedidos                       |
+| GET    | /Order                        | Consultar pedido paginado                    |
+| POST   | /Order                        | Criar pedido                                 |
+| GET    | /Order/[id]                   | Consultar pedido por ID                      |
+| DELETE | /Order/[id]                   | Deletar pedido por ID                        |
+| PATCH  | /Order/[id]                   | Atualizar itens do pedido por ID             |
+| POST   | /Payment/[id]/checkout        | Confirma pedido e obtém dados para pagamento |
+| GET    | /Payment/[id]/confirm-payment | Lista todos os pedidos                       |
 
 ℹ️ Para mais detalhes, acesse o [Swagger](https://localhost:7206/swagger/index.html).
 
