@@ -148,7 +148,7 @@ internal class OrderService : IOrderService
         );
 
         var orderPaymentCheckout = await _mercadoPagoPaymentAdapter.CreatePaymentAsync(checkoutInput!, paymentMethod, cancellationToken);
-        await _orderRepository.UpdatePaymentMethodAsync(order.Id!, PaymentMethod.Pix, cancellationToken);
+        await _orderRepository.UpdatePaymentMethodAsync(order!.Id!, paymentMethod, cancellationToken);
 
         return orderPaymentCheckout;
     }
@@ -172,7 +172,7 @@ internal class OrderService : IOrderService
         );
 
         var orderPaymentCheckout = await _mercadoPagoPaymentAdapter.CreatePaymentAsync(checkoutInput!, paymentMethod, cancellationToken);
-        await _orderRepository.UpdatePaymentMethodAsync(order.Id!, PaymentMethod.Pix, cancellationToken);
+        await _orderRepository.UpdatePaymentMethodAsync(order!.Id!, paymentMethod, cancellationToken);
 
         return orderPaymentCheckout;
     }
