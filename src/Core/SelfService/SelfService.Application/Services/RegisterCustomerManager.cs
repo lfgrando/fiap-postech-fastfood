@@ -25,7 +25,7 @@ public class RegisterCustomerManager : IRegisterCustomerService
 
         if (customer is null)
         {
-            throw new ArgumentNullException(nameof(customer));
+            throw new ApplicationException("customer does not exist");
         }
 
         var response = new CustomerResponse(customer.Id!, customer.Email ?? string.Empty);
