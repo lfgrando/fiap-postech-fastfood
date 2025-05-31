@@ -4,11 +4,11 @@ namespace Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class InventoryController : ControllerBase
+public class StockController : ControllerBase
 {
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok("InventoryController");
+        return Ok("StockController");
     }
 }

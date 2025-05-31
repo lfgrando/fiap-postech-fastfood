@@ -1,5 +1,5 @@
-﻿using Inventory.Application;
-using Inventory.Domain;
+﻿using Stock.Application;
+using Stock.Domain;
 using Kitchen.Application;
 using Kitchen.Domain;
 using Menu.Application;
@@ -18,8 +18,8 @@ public static class CoreExtensions
     public static IServiceCollection InjectCore(this IServiceCollection services)
     {
         return services
-            .InjectInventoryApplication()
-            .InjectInventoryDomain()
+            .InjectStockApplication()
+            .InjectStockDomain()
             .InjectKitchenApplication()
             .InjectKitchenDomain()
             .InjectMenuApplication()
