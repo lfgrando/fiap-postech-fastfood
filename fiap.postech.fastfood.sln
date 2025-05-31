@@ -17,20 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{7B8FA796-80EE-411A-8807-0C338B44B3EE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{4D2B2519-27DF-432B-AA47-E33670008FF5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "definitions", "definitions", "{1DF86B6A-0CC8-40C4-B28A-821636F529A2}"
-	ProjectSection(SolutionItems) = preProject
-		docs\definitions\linguagem-ubiqua.md = docs\definitions\linguagem-ubiqua.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "diagrams", "diagrams", "{DAF9B07E-2997-48D0-8EBE-58E953D8EABE}"
-	ProjectSection(SolutionItems) = preProject
-		docs\diagrams\bounded_context.drawio = docs\diagrams\bounded_context.drawio
-		docs\diagrams\event_storming.drawio = docs\diagrams\event_storming.drawio
-		docs\diagrams\story_telling.drawio = docs\diagrams\story_telling.drawio
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{684B02DA-09A3-4F8E-93D6-2BFFA8210E0A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DBBA7892-1563-4A64-A925-689D9838BA5C}"
@@ -197,8 +183,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{1DF86B6A-0CC8-40C4-B28A-821636F529A2} = {4D2B2519-27DF-432B-AA47-E33670008FF5}
-		{DAF9B07E-2997-48D0-8EBE-58E953D8EABE} = {4D2B2519-27DF-432B-AA47-E33670008FF5}
 		{684B02DA-09A3-4F8E-93D6-2BFFA8210E0A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{DBBA7892-1563-4A64-A925-689D9838BA5C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{5C25B8A1-FD62-4E68-8E4F-7C2943BE7B54} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
