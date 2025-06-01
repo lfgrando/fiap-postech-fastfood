@@ -37,7 +37,6 @@ Este sistema tem como objetivo gerenciar o processo de pedidos em uma lanchonete
 ### Pré-requisitos
 
 - Docker instalado
-- .NET 8.0
 
 ### Passos
 
@@ -65,7 +64,7 @@ Este sistema tem como objetivo gerenciar o processo de pedidos em uma lanchonete
 
 ## 🧪 Acessos úteis
 
-- Swagger UI: [https://localhost:8080/swagger/index.html](https://localhost:8080/swagger/index.html)
+- Swagger UI: [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html)
 - Mongo Express: [http://localhost:8081](http://localhost:8081)
   - Banco: `fiap_fastfood`
 
@@ -132,7 +131,7 @@ db/
 | POST   | /Payment/[id]/checkout        | Confirma pedido e obtém dados para pagamento |
 | GET    | /Payment/[id]/confirm-payment | Lista todos os pedidos                       |
 
-ℹ️ Para mais detalhes, acesse o [Swagger](https://localhost:7206/swagger/index.html).
+ℹ️ Para mais detalhes, acesse o [Swagger](http://localhost:8080/swagger/index.html).
 
 ---
 
