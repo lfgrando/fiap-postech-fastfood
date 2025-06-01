@@ -37,7 +37,6 @@ Este sistema tem como objetivo gerenciar o processo de pedidos em uma lanchonete
 ### Pré-requisitos
 
 - Docker instalado
-- .NET 8.0
 
 ### Passos
 
